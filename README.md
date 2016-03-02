@@ -3,7 +3,7 @@
 [TOC]
 
 ## 1. 初识Weinre
-&emsp;&emsp;[Weinre(Web Inspector Remote)](http://people.apache.org/~pmuellr/weinre-docs/latest/Home.html)是一款基于Web Inspector(Webkit)的远程调试工具， 它使用JS编写，  可以让我们在电脑上直接调试运行在手机上的远程页面。 与传统的Web Inspector的使用场景不同， Weinre的使用场景如下图， 调试的页面在手机上， 调试工具在PC的chrome， 二者通过网络连接通信。
+&emsp;&emsp;[Weinre(Web Inspector Remote)](http://weinre.mybluemix.net/)是一款基于Web Inspector(Webkit)的远程调试工具， 它使用JS编写，  可以让我们在电脑上直接调试运行在手机上的远程页面。 与传统的Web Inspector的使用场景不同， Weinre的使用场景如下图， 调试的页面在手机上， 调试工具在PC的chrome， 二者通过网络连接通信。
 
 ![weinre的使用场景](http://haitao.nos.netease.com/c2df12939de9457682a68abc24ad9062.jpg)
 
@@ -21,6 +21,11 @@
 
 ![Weinre安装成功](http://haitao.nos.netease.com/ef925d425fae45359198a510375f31fc.jpg)
 
+**如果没安装成功，err中有这样的字眼 No compatible version found: weinre@'*'**
+尝试指定weinre版本安装，比如
+```npm -g install weinre@2.0.0-pre-I0Z7U9OV```
+
+[weinre@2.0.0-pre-I0Z7U9OV](http://weinre.mybluemix.net/)
 
 #### 1.1.2 运行Weinre
 &emsp;&emsp;在Terminal中输入weinre开启服务, 
